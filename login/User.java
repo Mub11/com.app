@@ -1,8 +1,8 @@
 
 
 public class User{
-	private String username;
-	private String userpassword;
+	private String username = "123";
+	private String userpassword = "xxx";
 	
 	public User(){
 		
@@ -25,7 +25,7 @@ public class User{
 		return this.username;
 	}
 	
-	public String getUserpassword(){
+	public String getpassword(){
 		return this.userpassword;
 	}
 }
