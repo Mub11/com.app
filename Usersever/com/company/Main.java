@@ -1,5 +1,9 @@
 
 
+import Result.Result;
+import app.Userinfo;
+import app.UserinterImpl;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -9,23 +13,35 @@ public class Main {
         UserinterImpl userinterImpl = new UserinterImpl();
         Userinfo userinfo = new Userinfo();
         Scanner scan = new Scanner(System.in);
-        System.out.println("choose: 1.Login 2.registerme 3.regiseter");
+        System.out.println("choose: 1.Login 2.register 3.regiseter.. 4.exit  ");
         int choose = scan.nextInt();
         switch (choose) {
             case 1: {
+                Userinfo userLogin = new Userinfo();
                 System.out.println("Please input your Username");
-                userinfo.setUsername(scan.next());
+                userLogin.setUsername(scan.next());
                 System.out.println("Please input your password");
-                userinfo.setUserpassword(scan.next());
-                userinterImpl.Login(userinfo);
+                userLogin.setUserpassword(scan.next());
+                Result resultlogin = userinterImpl.login(userLogin);
+                System.out.println(resultlogin.getResultmessage());
                 break;
             }
             case 2: {
-                userinterImpl.registerme();
+                Userinfo userRegitster = new Userinfo();
+                System.out.println("Please input your Username");
+                userRegitster.setUsername(scan.next());
+                System.out.println("Please input your password");
+                userRegitster.setUserpassword(scan.next());
+                Result resultRegister = userinterImpl.register(userRegitster);
+                System.out.println(resultRegister.getResultmessage());
                 break;
             }
             case 3:{
-                userinterImpl.register();
+                userinterImpl.registerme();
+                break;
+            }
+            default:{
+                break;
             }
         }
     }

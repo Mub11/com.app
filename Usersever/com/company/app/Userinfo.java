@@ -1,4 +1,4 @@
-
+package app;
 
 public class Userinfo {
     private String username;

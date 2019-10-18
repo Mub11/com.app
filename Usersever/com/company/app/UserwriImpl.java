@@ -1,8 +1,8 @@
-
+package app;
 
 import java.io.*;
-
 public class UserwriImpl implements Userwri {
+    @Override
     public void save() {
         try {
             BufferedReader stdin =
