@@ -27,4 +27,8 @@ public class Dictionary extends Book {
     public void setDenfinitions(int denfinitions) {
         this.denfinitions = denfinitions;
     }
+    @Override
+    public String getBookId() {
+        return DefaultValue.Defalute_UBN + super.bookId;
+    }
 }
