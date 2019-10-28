@@ -3,8 +3,8 @@ package com.app.book;
 public class Dictionary extends Book {
     private int denfinitions = 500;
 
-    public Dictionary(String bookId, String bookName, int pages) {
-        super(bookId, bookName, pages);
+    public Dictionary(String bookId, String bookName, int pages, int price) {
+        super(bookId, bookName, pages, price);
     }
 
     @Override
@@ -29,6 +29,6 @@ public class Dictionary extends Book {
     }
     @Override
     public String getBookId() {
-        return DefaultValue.Defalute_UBN + super.bookId;
+        return DefaultValue.Defalute_UBN + super.getBookId();
     }
 }

@@ -4,11 +4,13 @@ public class Book {
     public String bookId;
     public String bookName;
     protected int pages;
+    public int price;
 
-    public Book(String bookId, String bookName, int pages){
+    public Book(String bookId, String bookName, int pages, int price){
         this.bookId =  bookId;
         this.bookName = bookName;
         this.pages = pages;
+        this.price = price;
     }
     @Override
     public String toString() {
