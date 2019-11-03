@@ -4,10 +4,7 @@ import java.util.Scanner;
 public class BooksImpl implements Books {
     Reading reading = new Reading("M","B",0,0);
     @Override
-    public void product() {
-        System.out.println("input your number");
-        Scanner scanner = new Scanner(System.in);
-        int choose = scanner.nextInt();
+    public void product(int choose) {
         switch (choose){
             case 1: {
                 reading.fiction();
