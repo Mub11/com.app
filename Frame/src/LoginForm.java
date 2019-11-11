@@ -1,4 +1,8 @@
+import org.omg.CORBA.COMM_FAILURE;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LoginForm {
     public static void main(String[] args){
@@ -18,6 +22,7 @@ public class LoginForm {
         frame1.setVisible(true);
     }
     private static  void placeComponents(JPanel panel){
+        final  String COMMAND_LOGIN = "LOGIN";
         panel.setLayout(null);
         JLabel userLabel = new JLabel("Username:");
         userLabel.setBounds(10,20,80,25);
@@ -39,7 +44,21 @@ public class LoginForm {
         panel.add(registerButton);
         JButton helpButton = new JButton("help");
         helpButton.setBounds(190,80,80,25);
+        loginButton.setActionCommand(COMMAND_LOGIN);
         panel.add(helpButton);
+        ActionListener actionListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String command = e.getActionCommand();
+                if (COMMAND_LOGIN.equals(command)){
+                    System.out.println("ok//");
+                    JOptionPane.showMessageDialog(null,"老番茄");
+                }else {
+                    System.out.println("cancel//");
+                }
+            }
+        };
+        loginButton.addActionListener(actionListener);
     }
     private static void registerComponents(JPanel panel){
         panel.setLayout(null);
