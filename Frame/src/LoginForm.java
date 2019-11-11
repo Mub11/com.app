@@ -1,4 +1,3 @@
-import org.omg.CORBA.COMM_FAILURE;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

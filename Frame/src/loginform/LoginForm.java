@@ -1,7 +1,5 @@
 package loginform;
 
-import com.sun.xml.internal.messaging.saaj.soap.JpegDataContentHandler;
-
 import javax.swing.*;
 
 public class LoginForm extends JFrame {
