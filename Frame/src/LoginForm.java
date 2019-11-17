@@ -17,7 +17,6 @@ public class LoginForm {
         frame1.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         JPanel panel1 = new JPanel();
         frame1.add(panel1);
-        registerComponents(panel1);
         frame1.setVisible(true);
     }
     private static  void placeComponents(JPanel panel){
@@ -58,29 +57,5 @@ public class LoginForm {
             }
         };
         loginButton.addActionListener(actionListener);
-    }
-    private static void registerComponents(JPanel panel){
-        panel.setLayout(null);
-        JLabel userLabel = new JLabel("you username:");
-        userLabel.setBounds(10,20,120,25);
-        panel.add(userLabel);
-        JTextField userText = new JTextField(20);
-        userText.setBounds(150,20,170,25);
-        panel.add(userText);
-        JLabel passLabel = new JLabel("you password:");
-        passLabel.setBounds(10,50,120,25);
-        panel.add(passLabel);
-        JTextField passText = new JTextField(20);
-        passText.setBounds(150,50,170,25);
-        panel.add(passText);
-        JLabel numLabel = new JLabel("you phone number:");
-        numLabel.setBounds(10,80,120,25);
-        panel.add(numLabel);
-        JTextField numText = new JTextField(20);
-        numText.setBounds(150,80,170,25);
-        panel.add(numText);
-        JButton complete = new JButton("complete");
-        complete.setBounds(150,110,120,25);
-        panel.add(complete);
     }
 }

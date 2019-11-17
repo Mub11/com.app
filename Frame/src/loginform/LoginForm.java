@@ -1,6 +1,10 @@
 package loginform;
 
+import registerform.RegisterForm;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LoginForm extends JFrame {
     private JPanel panelLogin;
@@ -40,8 +44,22 @@ public class LoginForm extends JFrame {
         helpButton.setBounds(190,80,80,25);
         panelLogin.add(helpButton);
         add(panelLogin);
+        registerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                RegisterForm registerForm = new RegisterForm();
+                registerForm.setFrameRegisterVisibe(true);
+            }
+        });
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                QQForm qqForm = new QQForm();
+                qqForm.setFrameWeChatVisible(true);
+            }
+        });
     }
     public void setFrameLoginVisibe(Boolean Visibe){
-        setVisible(true);
+        setVisible(Visibe);
     }
 }
