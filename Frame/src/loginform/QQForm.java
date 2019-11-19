@@ -13,7 +13,6 @@ public class QQForm extends JFrame {
     public static void main(String[] args){
         LoginForm loginForm = new LoginForm();
         loginForm.setFrameLoginVisibe(true);
-
     }
     public void setFrameWeChatVisible(Boolean visible){
         setVisible(visible);

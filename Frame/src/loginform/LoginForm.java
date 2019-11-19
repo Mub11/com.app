@@ -5,6 +5,7 @@ import registerform.RegisterForm;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Scanner;
 
 public class LoginForm extends JFrame {
     private JPanel panelLogin;
@@ -54,8 +55,12 @@ public class LoginForm extends JFrame {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                QQForm qqForm = new QQForm();
-                qqForm.setFrameWeChatVisible(true);
+                if(userText.getText().equals("123")){
+                    if (String.valueOf(passText.getPassword()).equals("xxx")) {
+                        QQForm qqForm = new QQForm();
+                        qqForm.setFrameWeChatVisible(true);
+                    }
+                }
             }
         });
     }
