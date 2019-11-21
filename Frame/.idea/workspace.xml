@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a7d716cd-7e7e-492b-b2f3-e4a0155996c9" name="Default" comment="2019.11.19">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/registerform/RegisterForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/registerform/RegisterForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/userinfo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginform/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginform/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginform/QQForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginform/QQForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registerform/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerform/RegisterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userinfo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinfo/Userinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Usersever/com/company/resoure/mub1.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -20,14 +32,15 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Mub11 &lt;54880583+mub11@users.noreply.github.com&gt;" />
         <option value="Mub11 &lt;m249294716@163.com&gt;" />
+        <option value="Mub11 &lt;54880583+mub11@users.noreply.github.com&gt;" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1TkEFjOU7ZoZHQEbSNfdPureegQ" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -117,6 +130,12 @@
       <workItem from="1573629239620" duration="2413000" />
       <workItem from="1573995621063" duration="1559000" />
       <workItem from="1574159801186" duration="2072000" />
+      <workItem from="1574171961343" duration="194000" />
+      <workItem from="1574311716740" duration="90000" />
+      <workItem from="1574341037121" duration="5117000" />
+      <workItem from="1574348441482" duration="227000" />
+      <workItem from="1574348808253" duration="668000" />
+      <workItem from="1574349572605" duration="1981000" />
     </task>
     <task id="LOCAL-00001" summary="2019.11.17">
       <created>1573997149528</created>
@@ -132,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574161808951</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2019.11.19">
+      <created>1574172002767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574172002768</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +181,17 @@
     <MESSAGE value="2019.11.17" />
     <MESSAGE value="2019.11.19" />
     <option name="LAST_COMMIT_MESSAGE" value="2019.11.19" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/loginform/LoginCheck.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

@@ -1,7 +1,5 @@
 package loginform;
 
-import registerform.RegisterForm;
-
 import javax.swing.*;
 
 public class QQForm extends JFrame {

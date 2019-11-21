@@ -1,10 +1,10 @@
 package userinfo;
 
-public class User {
+public class Userinfo {
     private String username = "123";
     private String userpassword = "xxx";
 
-    public User(String username,String userpassword){
+    public Userinfo(String username, String userpassword){
         this.username = username;
         this.userpassword = userpassword;
     }

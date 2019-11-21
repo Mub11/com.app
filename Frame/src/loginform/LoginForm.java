@@ -1,6 +1,8 @@
 package loginform;
 
 import registerform.RegisterForm;
+import userService.UserDAOImpl;
+import userinfo.Userinfo;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -16,6 +18,8 @@ public class LoginForm extends JFrame {
     private JButton loginButton;
     private JButton registerButton;
     private JButton helpButton;
+    Userinfo userinfo = new Userinfo("1","1");
+    LoginCheck loginCheck = new LoginCheck();
     public LoginForm(){
         setTitle("Login Form");
         setSize(350,200);
@@ -32,9 +36,11 @@ public class LoginForm extends JFrame {
         userText = new JTextField(10);
         userText.setBounds(100,20,170,25);
         panelLogin.add(userText);
+
         passText = new JPasswordField(10);
         passText.setBounds(100,50,170,25);
         panelLogin.add(passText);
+
         loginButton = new JButton("login");
         loginButton.setBounds(10,80,80,25);
         panelLogin.add(loginButton);
@@ -55,12 +61,9 @@ public class LoginForm extends JFrame {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(userText.getText().equals("123")){
-                    if (String.valueOf(passText.getPassword()).equals("xxx")) {
-                        QQForm qqForm = new QQForm();
-                        qqForm.setFrameWeChatVisible(true);
-                    }
-                }
+                userinfo.setUsername(userText.getText());
+                userinfo.setUserpassword(String.valueOf(passText.getPassword()));
+                loginCheck.loginCheck(userinfo);
             }
         });
     }
