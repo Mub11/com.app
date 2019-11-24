@@ -1,5 +1,6 @@
 package registerform;
 
+import Result.Success;
 import userService.UserDAOImpl;
 import userinfo.Userinfo;
 
@@ -57,6 +58,8 @@ public class RegisterForm extends JFrame{
                 userinfo = User();
                 UserDAOImpl userDAO = new UserDAOImpl();
                 userDAO.saveUser(userinfo);
+                setFrameRegisterVisibe(false);
+                Success success = new Success();
             }
         });
     }
