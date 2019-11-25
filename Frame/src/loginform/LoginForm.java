@@ -51,13 +51,14 @@ public class LoginForm extends JFrame {
         helpButton.setBounds(190,80,80,25);
         panelLogin.add(helpButton);
         add(panelLogin);
-        registerButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        class registerListener implements ActionListener{
+
+            public void actionPerformed(ActionEvent e){
                 RegisterForm registerForm = new RegisterForm();
                 registerForm.setFrameRegisterVisibe(true);
             }
-        });
+        }
+        registerButton.addActionListener(new registerListener());
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
