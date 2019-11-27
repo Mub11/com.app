@@ -1,22 +1,34 @@
 package Result;
 
-import loginform.LoginForm;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Success extends JFrame {
+public class Error extends JFrame{
     private JPanel panelSuccess;
     private JLabel successLabel;
     private JButton successButton;
-    public Success(){
+    public Error(int result){
         setSize(350,200);
 
+        if(result == 0){
+            successLabel = new JLabel("Error");
+            successLabel.setBounds(135,50,80,25);
+        }
+        else if(result == 1){
+            successLabel = new JLabel("Password error");
+            successLabel.setBounds(110,50,150,25);
+        }
+        else if(result == 2){
+            successLabel = new JLabel("Username error");
+            successLabel.setBounds(110,50,150,25);
+        }
+        else if(result == 3){
+            successLabel = new JLabel("Successfully!");
+            successLabel.setBounds(110,50,80,25);
+        }
         panelSuccess = new JPanel();
         panelSuccess.setLayout(null);
-        successLabel = new JLabel("Successfully!");
-        successLabel.setBounds(110,50,80,25);
         panelSuccess.add(successLabel);
         successButton = new JButton("Complete");
         successButton.setBounds(100,100,100,25);
@@ -27,8 +39,6 @@ public class Success extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                LoginForm loginForm = new LoginForm();
-                loginForm.setFrameLoginVisibe(true);
             }
         });
     }

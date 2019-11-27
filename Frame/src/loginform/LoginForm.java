@@ -1,13 +1,13 @@
 package loginform;
 
+import Result.Error;
 import registerform.RegisterForm;
-import userService.UserDAOImpl;
 import userinfo.Userinfo;
+import utils.LoginCheck;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 
 public class LoginForm extends JFrame {
     private JPanel panelLogin;
@@ -56,6 +56,7 @@ public class LoginForm extends JFrame {
             public void actionPerformed(ActionEvent e){
                 RegisterForm registerForm = new RegisterForm();
                 registerForm.setFrameRegisterVisibe(true);
+                dispose();
             }
         }
         registerButton.addActionListener(new registerListener());
@@ -65,6 +66,9 @@ public class LoginForm extends JFrame {
                 userinfo.setUsername(userText.getText());
                 userinfo.setUserpassword(String.valueOf(passText.getPassword()));
                 loginCheck.loginCheck(userinfo);
+                int result = loginCheck.loginCheck(userinfo);
+                Error error = new Error(result);
+                dispose();
             }
         });
     }

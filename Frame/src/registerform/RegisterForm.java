@@ -58,7 +58,7 @@ public class RegisterForm extends JFrame{
                 userinfo = User();
                 UserDAOImpl userDAO = new UserDAOImpl();
                 userDAO.saveUser(userinfo);
-                setFrameRegisterVisibe(false);
+                dispose();
                 Success success = new Success();
             }
         });
