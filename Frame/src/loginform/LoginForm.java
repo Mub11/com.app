@@ -65,7 +65,6 @@ public class LoginForm extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 userinfo.setUsername(userText.getText());
                 userinfo.setUserpassword(String.valueOf(passText.getPassword()));
-                loginCheck.loginCheck(userinfo);
                 int result = loginCheck.loginCheck(userinfo);
                 Error error = new Error(result);
                 dispose();

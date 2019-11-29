@@ -18,10 +18,10 @@ public class LoginCheck {
                 throw new Exception();
             }
             BufferedReader read = new BufferedReader(new FileReader(file));
-            if (userinfo.getUsername().equals(read.readLine())) {
+            if (userinfo.getUsername().equals(read.readLine().replaceAll(" +",""))) {
                 result = result + 1;
             }
-            if (userinfo.getpassword().equals(read.readLine())) {
+            if (userinfo.getpassword().equals(read.readLine().replaceAll(" +",""))) {
                 result = result + 2;
                 QQForm qqForm = new QQForm();
                 qqForm.setFrameWeChatVisible(true);

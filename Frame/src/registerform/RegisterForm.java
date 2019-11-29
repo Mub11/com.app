@@ -1,8 +1,10 @@
 package registerform;
 
+import Result.ErrorWhite;
 import Result.Success;
 import userService.UserDAOImpl;
 import userinfo.Userinfo;
+import utils.HasKongge;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -56,16 +58,21 @@ public class RegisterForm extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 userinfo = User();
-                UserDAOImpl userDAO = new UserDAOImpl();
-                userDAO.saveUser(userinfo);
-                dispose();
-                Success success = new Success();
+                HasKongge haskongge = new HasKongge();
+                if(haskongge.hasKongge(userText.getText()) || haskongge.hasKongge(passText.getText())){
+                    ErrorWhite errorWhite = new ErrorWhite();
+                }else {
+                    UserDAOImpl userDAO = new UserDAOImpl();
+                    userDAO.saveUser(userinfo);
+                    dispose();
+                    Success success = new Success();
+                }
             }
         });
     }
     public Userinfo User(){
-        userinfo.setUsername(userText.getText());
-        userinfo.setUserpassword(String.valueOf(passText.getText()));
+        userinfo.setUsername(userText.getText().replaceAll(" +",""));
+        userinfo.setUserpassword(String.valueOf(passText.getText().replaceAll(" +","")));
         return  userinfo;
     }
     public void setFrameRegisterVisibe(Boolean Visibe){
