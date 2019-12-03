@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7d716cd-7e7e-492b-b2f3-e4a0155996c9" name="Default" comment="2019.11.19">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a7d716cd-7e7e-492b-b2f3-e4a0155996c9" name="Default" comment="2019.11.29">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/smartfox_info.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/LoginForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/LoginForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/LoginForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/Result/Error$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/Result/Error$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/Result/Error.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/Result/Error.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/Result/Success$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/Result/Success$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/Result/Success.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/Result/Success.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$1registerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm$1registerListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/LoginForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/registerform/RegisterForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/registerform/RegisterForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/registerform/RegisterForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/registerform/RegisterForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/resource/123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/userService/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/userService/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/utils/LoginCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/utils/LoginCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/resource/213.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Frame/resource/lwd.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/loginform/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginform/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/registerform/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerform/RegisterForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/LoginCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/LoginCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loginform/QQForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginform/QQForm.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,13 +37,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1TkEFjOU7ZoZHQEbSNfdPureegQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Frame" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.QQForm">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -84,6 +75,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerSocketTcp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="userService.ServerSocketTcp" />
+      <module name="Frame" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,6 +132,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.QQForm" />
+        <item itemvalue="Application.ServerSocketTcp" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +159,14 @@
       <workItem from="1574672124276" duration="2342000" />
       <workItem from="1574838883741" duration="2329000" />
       <workItem from="1574989585145" duration="2950000" />
-      <workItem from="1575017249790" duration="1191000" />
+      <workItem from="1575017249790" duration="1324000" />
+      <workItem from="1575292247682" duration="9375000" />
+      <workItem from="1575302200927" duration="486000" />
+      <workItem from="1575346111035" duration="29000" />
+      <workItem from="1575346335395" duration="3377000" />
+      <workItem from="1575360564534" duration="11714000" />
+      <workItem from="1575386847403" duration="1256000" />
+      <workItem from="1575388395252" duration="557000" />
     </task>
     <task id="LOCAL-00001" summary="2019.11.17">
       <created>1573997149528</created>
@@ -183,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574351639497</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2019.11.29">
+      <created>1575018531052</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575018531052</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2019.11.17" />
     <MESSAGE value="2019.11.19" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019.11.19" />
+    <MESSAGE value="2019.11.29" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019.11.29" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -214,6 +235,11 @@
           <url>file://$PROJECT_DIR$/src/registerform/RegisterForm.java</url>
           <line>61</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/userService/ClientThread.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

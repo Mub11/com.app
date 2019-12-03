@@ -68,6 +68,9 @@ public class LoginForm extends JFrame {
                 int result = loginCheck.loginCheck(userinfo);
                 Error error = new Error(result);
                 dispose();
+                if(result == 3){
+                    QQForm qqForm = new QQForm();
+                }
             }
         });
     }
