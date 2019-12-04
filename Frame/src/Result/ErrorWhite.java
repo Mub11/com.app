@@ -1,6 +1,8 @@
 package Result;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ErrorWhite extends JFrame {
     private JPanel panelWhite;
@@ -21,5 +23,12 @@ public class ErrorWhite extends JFrame {
         panelWhite.add(whiteButton);
         add(panelWhite);
         setVisible(true);
+
+        whiteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
     }
 }

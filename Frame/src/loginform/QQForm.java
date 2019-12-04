@@ -18,11 +18,13 @@ public class QQForm extends JFrame {
     public JTextField inputText;
     private JLabel outputLabel;
     public JTextArea outputText;
+    private JLabel ipLabel;
+    private JTextField ipText;
     private JButton severButton;
     private JButton sendButton;
     public QQForm(){
         setTitle("QQ Form");
-        setSize(350,200);
+        setSize(600,300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         panelQQ = new JPanel();
@@ -34,11 +36,17 @@ public class QQForm extends JFrame {
         outputText.setBounds(10,10,300,125);
         panelQQ.add(outputText, BorderLayout.CENTER);
         severButton = new JButton("显示");
-        severButton.setBounds(350,130,100,20);
+        severButton.setBounds(320,170,80,30);
         panelQQ.add(severButton);
         sendButton = new JButton("发送");
-        sendButton.setBounds(500,130,100,20);
+        sendButton.setBounds(410,170,80,30);
         panelQQ.add(sendButton);
+        ipLabel = new JLabel("对方IP");
+        ipLabel.setBounds(320,100,50,30);
+        panelQQ.add(ipLabel);
+        ipText = new JTextField(20);
+        ipText.setBounds(320,125,100,20);
+        panelQQ.add(ipText);
 
         add(panelQQ);
         serverSocketTcp.start();
@@ -55,7 +63,7 @@ public class QQForm extends JFrame {
             public void actionPerformed(ActionEvent ae) {
                 String message = inputText.getText();
                 try {
-                    String serverAddress = "127.0.0.1";
+                    String serverAddress = ipText.getText();
                     int serverPort = 8180;
                     Socket socket = new Socket(serverAddress, serverPort);
                     BufferedWriter bufferedWriter =new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));

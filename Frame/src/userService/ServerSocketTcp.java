@@ -23,7 +23,11 @@ public class ServerSocketTcp extends Thread{
                     String serverAddress = "127.0.0.1";
                     Socket socket = serverSocket.accept();
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
-                    content = bufferedReader.readLine();
+                    if(content == null) {
+                        content = "He say:" + bufferedReader.readLine();
+                    }else {
+                        content = content + "\n" + "He say:" + bufferedReader.readLine();
+                    }
                     ServerSocketTcp(content);
                     //InetAddress inetAddress = socket.getInetAddress();//获取客户端的连接
                     //  ServerThread thread = new ServerThread(socket, inetAddress);//自己创建的线程类
