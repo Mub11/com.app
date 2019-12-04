@@ -16,6 +16,7 @@ public class UserDAOImpl implements UserDAO {
      * @data: 2019/10/16 23:31
      */
 
+    @Override
     public boolean saveUser(Userinfo userinfo){
         boolean result = false;
         try{
@@ -41,6 +42,7 @@ public class UserDAOImpl implements UserDAO {
         return result;
     }
 
+    @Override
     public Userinfo findUserInfoByName(String username){
         Userinfo userinfo = new Userinfo("11","1");
         try {

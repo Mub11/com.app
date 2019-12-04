@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7d716cd-7e7e-492b-b2f3-e4a0155996c9" name="Default" comment="2019.12.4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/Result/ErrorWhite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/Result/ErrorWhite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm$1qqListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm$1qqListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm$1sendB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm$1sendB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/loginform/QQForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frame/userService/ServerSocketTcp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Frame/userService/ServerSocketTcp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Result/ErrorWhite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Result/ErrorWhite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loginform/QQForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loginform/QQForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userService/ServerSocketTcp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userService/ServerSocketTcp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userService/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userService/UserDAOImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +160,7 @@
       <workItem from="1575388395252" duration="557000" />
       <workItem from="1575433185552" duration="96000" />
       <workItem from="1575463449314" duration="2616000" />
-      <workItem from="1575466827843" duration="812000" />
+      <workItem from="1575466827843" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="2019.11.17">
       <created>1573997149528</created>
@@ -212,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575389267644</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2019.12.4">
+      <created>1575467771230</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575467771230</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
